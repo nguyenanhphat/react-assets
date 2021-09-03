@@ -1,0 +1,36 @@
+@import 'assets/css/variables';
+
+$bg-tag-default: #f7f7f7;
+$text-default: #858688;
+
+.tag-custom {
+  background: $bg-tag-default;
+  color: $text-default;
+  margin-right: 4px;
+  border-radius: 4px;
+  font-size: 11px;
+  min-width: 80px;
+  padding: 3px 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: fit-content;
+  transition: 0.5s all;
+  &:hover {
+    background: $color-success;
+    color: white;
+  }
+  .icon {
+    margin-right: 3px;
+    font-size: 12px;
+  }
+  .amount {
+    margin-left: 4px;
+  }
+}
+
+.tag-custom-active {
+  background: $color-success;
+  color: white;
+}

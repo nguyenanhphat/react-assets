@@ -1,0 +1,111 @@
+@import 'assets/css/variables';
+$text-menu-item: #858688;
+$bg-menu-item-selected: #44494e;
+aside.sider-layout-custom {
+  background: $primary-color;
+  color: $text-menu-item;
+  .logo-wrapper {
+    height: 64px;
+    padding: 5px 17px;
+    img {
+      height: 100%;
+    }
+  }
+  .sidebar-menu-custom {
+    background: transparent;
+    border-right: none;
+    .menu-item-custom {
+      color: $text-menu-item;
+      border-radius: 4px;
+      height: 42px;
+      line-height: 42px;
+      display: flex;
+      align-items: center;
+      .anticon {
+        font-size: 20px;
+      }
+      &::after {
+        border-right: 3px solid $color-success;
+      }
+    }
+    .submenu-item-custom {
+      color: $text-menu-item;
+      .anticon {
+        font-size: 20px;
+      }
+      .ant-menu-submenu-title {
+        &:hover {
+          color: $text-menu-item;
+        }
+        .ant-menu-submenu-arrow {
+          color: $text-menu-item;
+        }
+      }
+      .ant-menu-sub {
+        background: $primary-color;
+        .ant-menu-item-group {
+          .ant-menu-item-group-title {
+            padding: 6px 16px;
+          }
+        }
+      }
+    }
+    .menu-item-hide {
+      display: flex;
+      justify-content: center;
+      color: $text-menu-item;
+      height: 42px;
+      line-height: 42px;
+      display: flex;
+      align-items: center;
+      border-radius: 4px;
+      .anticon {
+        font-size: 20px;
+      }
+      &::after {
+        border-right: none;
+      }
+    }
+    .ant-menu-item-selected {
+      color: $color-success;
+      background: $bg-menu-item-selected;
+      .ant-menu-item-icon {
+        svg {
+          path {
+            fill: $color-success;
+          }
+        }
+      }
+    }
+    .ant-menu-submenu-open {
+      .ant-menu-submenu-title {
+        color: $color-white;
+        .anticon {
+          svg {
+            g {
+              fill: $color-white;
+            }
+          }
+        }
+        .ant-menu-submenu-arrow {
+          color: $color-white;
+        }
+      }
+      .menu-item-submenu-custom {
+        color: $text-menu-item;
+        &::after {
+          border-right: 3px solid $color-success;
+        }
+      }
+      .ant-menu-item-selected {
+        color: $color-success;
+        background: $primary-color;
+      }
+    }
+  }
+  .ant-menu-submenu-active {
+    .ant-menu-submenu-title {
+      color: $color-white !important;
+    }
+  }
+}

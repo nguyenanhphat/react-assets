@@ -1,0 +1,50 @@
+@import 'assets/css/variables';
+
+$color-paginate-item: #858688;
+
+.section-paginate {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-top: 1px solid #cecece;
+  .size-changer {
+    display: flex;
+    align-items: center;
+    .control {
+      width: 80px;
+      margin-right: 5px;
+    }
+  }
+
+  .paginate-custom {
+    .ant-pagination-prev,
+    .ant-pagination-next {
+      button {
+        color: $color-success;
+        border: none;
+      }
+    }
+    .ant-pagination-disabled {
+      button {
+        color: #ccc;
+      }
+    }
+
+    .ant-pagination-item {
+      border: none;
+      min-width: 25px;
+      height: 25px;
+      line-height: 25px;
+      a {
+        color: $color-paginate-item;
+        font-weight: 500;
+      }
+    }
+    .ant-pagination-item-active {
+      background: $color-success;
+      a {
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+div.my-card-custom {
+  border: none;
+  .ant-card-head {
+    padding: 0 15px;
+    margin-bottom: 0px;
+    height: 40px;
+    min-height: 40px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #cecece;
+    .ant-card-head-wrapper {
+      height: inherit;
+      .ant-card-head-title {
+        font-size: 16px;
+        padding: 0px;
+      }
+    }
+  }
+  .footer-action {
+    border-top: 1px solid #cecece;
+  }
+}
+
+.my-card-custom.card-border {
+  border: 1px solid #cecece;
+}
+
+.my-card-custom.reset-body-padding {
+  .ant-card-body {
+    padding: 0px;
+  }
+}
+
+.my-card-custom.fix-body-margin {
+  margin: 10px 20px;
+}
+
+

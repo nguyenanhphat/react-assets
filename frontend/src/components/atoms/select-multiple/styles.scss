@@ -1,0 +1,119 @@
+@import 'assets/css/mixin';
+$color-menu-item-hover: #ccc;
+$color-menu-item-selected: #ebedf2;
+
+$background-prefix: #dedede;
+$prefix-icon: #a9a9a9;
+$border-control: #cecece;
+
+.wrapper-menu-select-multiple {
+  background: white;
+  box-shadow: 0 4px 13px 0 rgba(0, 0, 0, 0.09);
+  .clear-section {
+    border-bottom: 1px solid #ebedf2;
+    padding: 5px 7px;
+    line-height: 24px;
+    transition: height 3s ease-out;
+    overflow: hidden;
+    @include text-base(500, 12px, #888);
+    .text {
+      cursor: pointer;
+      &:hover {
+        color: $color-success;
+        text-decoration: underline;
+      }
+    }
+  }
+  .clear-section.has-result {
+    height: 30px;
+  }
+  .search-section {
+    border-bottom: 1px solid #ebedf2;
+  }
+  .menu-item-wrapper {
+    max-height: 400px;
+    overflow: auto;
+    .menu-item {
+      padding: 5px 8px;
+      cursor: pointer;
+      &:hover {
+        background-color: $color-menu-item-hover;
+      }
+      .text {
+        margin-left: -10px;
+      }
+    }
+    .menu-item-selected {
+      background-color: $color-menu-item-selected;
+    }
+  }
+}
+
+.content-select-multiple {
+  display: flex;
+  line-height: 40px;
+  border: 1px solid $border-control;
+  border-radius: 5px;
+  background: white;
+  width: 100%;
+  .icon {
+    width: 40px;
+    text-align: center;
+    font-size: 18px;
+    background: $background-prefix;
+    color: $prefix-icon;
+  }
+  .icon-has-value {
+    background: $color-success;
+    color: white;
+  }
+  .control-value {
+    flex: 1;
+    border: none;
+    width: inherit;
+    color: #858688;
+    font-size: 13px;
+    margin-left: 10px;
+    &:hover,
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+  .control-value.showing {
+    color: $text-base-color;
+  }
+  .control-value::placeholder {
+    color: #858688;
+  }
+  .total-selected {
+    margin-left: 5px;
+  }
+  .toggle-icon {
+    width: 40px;
+    text-align: center;
+    position: relative;
+    &:after {
+      transition: transform linear 0.3s;
+      content: '';
+      position: absolute;
+      top: 15px;
+      right: 16px;
+      width: 9px;
+      height: 9px;
+      border: solid #a9a9a9;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      pointer-events: none;
+    }
+  }
+  .toggle-icon.open:after {
+    top: 19px;
+    transform: rotate(225deg);
+  }
+}
+
+.content-select-multiple:hover,
+.content-select-multiple.selecting {
+  border-color: $color-success;
+}

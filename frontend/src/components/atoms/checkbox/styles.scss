@@ -1,0 +1,24 @@
+@import "assets/css/variables";
+
+.my-checkbox {
+  .ant-checkbox {
+    margin-left: 0px;
+    margin-right: 0px;
+    .ant-checkbox-input:focus {
+      border-color: $color-success;
+    }
+    .ant-checkbox-inner {
+      background-color: white;
+      border-color: $color-success;
+      width: 20px;
+      height: 20px;
+      &:after {
+        border-color: $color-success;
+        width: 5px;
+        height: 11px;
+        top: 47%;
+        left: 27%;
+      }
+    }
+  }
+}

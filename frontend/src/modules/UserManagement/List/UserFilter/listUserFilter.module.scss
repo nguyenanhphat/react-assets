@@ -1,0 +1,10 @@
+@import 'assets/css/variables';
+.containerFilter {
+  .filterInput {
+    padding: 0 24px 0 20px;
+  }
+  .filterCheckBox {
+    display: flex;
+    align-items: center;
+  }
+}

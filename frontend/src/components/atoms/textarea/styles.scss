@@ -1,0 +1,10 @@
+@import 'assets/css/variables';
+textarea.ant-input.textarea-custom {
+  border-radius: 5px;
+  min-height: 106px;
+  &:hover,
+  &:focus {
+    border-color: $color-success;
+    box-shadow: none;
+  }
+}

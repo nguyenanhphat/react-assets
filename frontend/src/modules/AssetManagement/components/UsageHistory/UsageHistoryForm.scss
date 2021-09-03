@@ -1,0 +1,26 @@
+@import 'assets/css/variables';
+.create-usage-history {
+    .create-history-form {
+        .upload-row {
+            margin-bottom: 32px;
+        }
+        .button-row {
+            margin: 20px 0;
+        }
+    }
+    h3 {
+        color: $primary-color;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 20px;
+    }
+}
+
+.contain-handover-content {
+    display: flex;
+}
+
+.ant-popover-placement-bottom {
+    width: 378px;
+}

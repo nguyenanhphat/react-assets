@@ -1,0 +1,47 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                script {
+                    sh 'node -v'
+                    echo 'Build BE files'
+                    dir('backend') {
+                        sh 'if [ -d "dist/development" ]; then rm -Rf dist/development; fi'
+                        sh 'npm install'
+                        sh 'npm run build-dev'
+                    }
+                }
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'No test yet!'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                script {
+
+                    sh 'node -v'
+                    echo 'Clear all files in api folder'
+                    dir('C:/webdeploy/DEV_assetsapi') {
+                        sh '''
+                        mkdir -p bundle
+                        '''
+                    }
+                    dir('C:/webdeploy/DEV_assetsapi/bundle') {
+                        sh '''
+                        shopt -s extglob
+                        rm -rf *
+                        '''
+                    }
+
+                    echo 'Copy built files to bundle folder'
+                    sh 'cp -r backend/dist/development/. C:/webdeploy/DEV_assetsapi/bundle/'
+                }
+
+            }
+        }
+    }
+}

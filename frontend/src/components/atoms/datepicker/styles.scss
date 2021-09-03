@@ -1,0 +1,36 @@
+@import 'assets/css/variables';
+$border-control: #cecece;
+
+.ant-picker.my-datepicker-custom {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid $border-control;
+  .ant-picker-input {
+    .ant-picker-suffix {
+      color: black;
+    }
+    input::placeholder {
+      color: #858688;
+      font-size: 13px;
+    }
+  }
+}
+
+.my-datepicker-custom.ant-picker:hover,
+.my-datepicker-custom.ant-picker-focused {
+  border-color: $color-success;
+  box-shadow: none;
+}
+
+.ant-picker-content
+  .ant-picker-cell-in-view.ant-picker-cell-selected
+  .ant-picker-cell-inner {
+  background: $color-success;
+}
+
+.ant-picker-content
+  .ant-picker-cell-in-view.ant-picker-cell-today
+  .ant-picker-cell-inner:before {
+  border-color: $color-success;
+}

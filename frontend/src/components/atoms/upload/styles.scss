@@ -1,0 +1,118 @@
+@import "assets/css/variables";
+$prefix-icon: #a9a9a9;
+.upload-link-custom {
+  margin-top: 20px;
+  .add-new-link {
+    font-size: 13px;
+    color: $color-success;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .list-link {
+    .link-item {
+      .title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        .icon-delete {
+          &:hover {
+            color: $color-success;
+          }
+        }
+      }
+    }
+  }
+}
+
+.upload-custom {
+  margin-top: 30px;
+  span div.dragger-custom:hover {
+    border-color: $color-success;
+  }
+
+  .text-drag-drop {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .text-chose-file {
+    color: rgba(0,0,0,.45);
+    margin-top: 5px;
+    & > span {
+      color: $color-success;
+    }
+  }
+  .contain-upload {
+    display: flex;
+    flex-wrap: wrap;
+    .view-upload {
+      flex: 6;
+      .dragger-wrapper {}
+      .list-file-uploading {
+        margin-top: 50px;
+      }
+    }
+    .review-file-upload {
+      flex: 4;
+      padding: 20px 10px 0 10px;
+      display: flex;
+      flex-direction: column;
+      &.no-data {
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .list-file-uploading, .review-file-upload {
+      .file-item {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 15px;
+        padding: 8px;
+        cursor: pointer;
+        .icon-wrapper {
+          margin-right: 10px;
+          color: $prefix-icon;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid $grey;
+          border-radius: 4px;
+        }
+        .content {
+          flex: 1;
+          margin-right: 15px;
+          .file-name {
+            font-size: 12px;
+            color: $primary-color;
+          }
+        }
+        .remove-icon {
+          font-size: 18px;
+        }
+        &:hover{
+          background-color: $lgt;
+          .icon-wrapper {
+            color: $primary-color;
+            background-color: $grey;
+          }
+        }
+      }
+    }
+
+    &.column-display {
+      flex-direction: column;
+      .review-file-upload {
+        padding: 0;
+        order: 1;
+        flex: 1;
+      }
+      .view-upload {
+        order: 2;
+        flex: 1;
+      }
+    }
+  }
+}

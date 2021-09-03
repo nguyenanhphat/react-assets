@@ -1,0 +1,21 @@
+@import 'assets/css/variables';
+div.tab-custom {
+  .ant-tabs-nav {
+    margin-bottom: 0px;
+  }
+  .ant-tabs-tab-active {
+    .ant-tabs-tab-btn {
+      color: $color-success;
+    }
+    .ant-tabs-tab-btn:hover {
+      color: $color-success;
+    }
+  }
+  .ant-tabs-ink-bar {
+    background: $color-success !important;
+  }
+
+  .ant-tabs-tab:hover {
+    color: $text-base-color;
+  }
+}

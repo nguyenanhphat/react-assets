@@ -1,0 +1,70 @@
+$base-font: Roboto, 'Helvetica Neue';
+
+$color-white: #ffffff;
+$color-success: #8dc63f;
+$text-base-color: #292e35;
+$color-warning: #f2c53e;
+
+$primary-color: #151b22;
+$primary-color-light: #858688;
+$primary-color-dark: #0b0e12;
+
+$secondary-color: #396500;
+$secondary-color-dark: #1c3200;
+$secondary-color-light: #608332;
+
+$accent-color: #8dc63f;
+$accent-color-dark: #547625;
+$accent-color-light: #badc8b;
+
+$grey: #e9e9e9;
+$grey-dark: #cecece;
+$grey-light: #f6f7fa;
+
+$bla: #000000;
+$wht: #ffffff;
+$lgt: #f7f7f7;
+
+$color-border-base: #cecece;
+
+// List width
+$list-width: (
+  0p: 0%,
+  3p: 3%,
+  5p: 5%,
+  10p: 10%,
+  20p: 20%,
+  30p: 30%,
+  40p: 40%,
+  50p: 50%,
+  60p: 60%,
+  70p: 70%,
+  80p: 80%,
+  90p: 90%,
+  100p: 100%,
+);
+// List spacing
+$list-spacing-border: (
+  0: 0px,
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+  10: 10px,
+  15: 15px,
+  20: 20px,
+);
+// List font size
+$list-font-size: (
+  10: 10px,
+  12: 12px,
+  14: 14px,
+  16: 16px,
+  18: 18px,
+  20: 20px,
+  22: 22px,
+  24: 24px,
+  25: 25px,
+  26: 26px,
+);

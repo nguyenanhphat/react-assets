@@ -1,0 +1,11 @@
+@import 'assets/css/variables';
+.container-filter {
+  .filter-input {
+    padding: 0 24px 0 20px;
+    .ant-form {
+      .ant-form-item {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import 'assets/css/variables';
+.progress-custom {
+  .ant-progress-outer .ant-progress-inner {
+    border-radius: 0;
+    height: 6px;
+    border-radius: 3px;
+    .ant-progress-bg {
+      background: repeating-linear-gradient(
+        135deg,
+        $color-success,
+        $color-success 5px,
+        #8ed154 2px,
+        #8ed154 10px
+      );
+    }
+  }
+}
+
+.progress-custom.pending {
+  .ant-progress-inner {
+    .ant-progress-bg {
+      background: repeating-linear-gradient(
+        135deg,
+        $color-warning,
+        $color-warning 5px,
+        $color-warning 2px,
+        $color-warning 10px
+      );
+    }
+  }
+}

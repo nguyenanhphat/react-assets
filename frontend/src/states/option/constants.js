@@ -1,0 +1,4 @@
+export const STATE_NAME = 'OPTION';
+
+export const GET_LIST_OPTION = 'GET_LIST_OPTION';
+export const GET_LIST_OPTION_SUCCESS = 'GET_LIST_OPTION_SUCCESS';

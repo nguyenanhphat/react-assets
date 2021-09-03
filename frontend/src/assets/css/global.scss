@@ -1,0 +1,119 @@
+@import 'assets/css/variables';
+@import 'assets/css/modal-confirm';
+@import 'assets/css/form';
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $base-font;
+  font-size: 13px;
+}
+
+// Footer cart
+.footer-card-custom {
+  height: 80px;
+  border-top: 1px solid $color-border-base;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  .ant-form-item {
+    margin-bottom: 0px;
+  }
+}
+
+// Text align
+.t-left {
+  text-align: left;
+}
+.t-right {
+  text-align: right;
+}
+.t-center {
+  text-align: center;
+}
+
+
+// Width class
+@each $size, $value in $list-width {
+  .w-#{$size} {
+    width: $value !important;
+  }
+}
+
+// Font-size class
+@each $size, $value in $list-font-size {
+  .fs-#{$size} {
+    font-size: $value;
+  }
+}
+
+// Spacing class
+@each $size, $value in $list-spacing-border {
+  // border
+  .b-#{$size} {
+    border: $value solid $color-border-base;
+  }
+  .bt-#{$size} {
+    border-top: $value solid $color-border-base;
+  }
+  .bb-#{$size} {
+    border-bottom: $value solid $color-border-base;
+  }
+  .bl-#{$size} {
+    border-left: $value solid $color-border-base;
+  }
+  .br-#{$size} {
+    border-right: $value solid $color-border-base;
+  }
+
+  // Padding
+  .p-#{$size} {
+    padding: $value;
+  }
+  .px-#{$size} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+  .py-#{$size} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+  .pl-#{$size} {
+    padding-left: $value;
+  }
+  .pr-#{$size} {
+    padding-right: $value;
+  }
+  .pt-#{$size} {
+    padding-top: $value !important;
+  }
+  .pb-#{$size} {
+    padding-bottom: $value !important;
+  }
+  // Margin
+  .m-#{$size} {
+    margin: $value;
+  }
+  .mx-#{$size} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+  .my-#{$size} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+  .ml-#{$size} {
+    margin-left: $value !important;
+  }
+  .mr-#{$size} {
+    margin-right: $value !important;
+  }
+  .mt-#{$size} {
+    margin-top: $value !important;
+  }
+  .mb-#{$size} {
+    margin-bottom: $value !important;
+  }
+}

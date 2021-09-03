@@ -1,0 +1,32 @@
+@import "assets/css/variables";
+.modal-confirm-custom {
+  .ant-modal-body {
+    padding: 0px;
+    .anticon-exclamation-circle {
+      display: none;
+    }
+    .ant-modal-confirm-title { 
+      line-height: 40px;
+      padding: 10px;
+      background: $color-success;
+      color: white;
+    }
+    .ant-modal-confirm-content {
+      margin-left: 0px !important;
+      padding: 10px 20px 0px 20px;
+    }
+  }
+  .ant-modal-confirm-btns {
+    float: unset;
+    padding: 20px;
+    text-align: right;
+    .ant-btn:first-child:hover {
+      border-color: $color-success;
+      color: $color-success;
+    }
+    .ant-btn-primary {
+      background: $color-success;
+      border-color: $color-success;
+    }
+  }
+}

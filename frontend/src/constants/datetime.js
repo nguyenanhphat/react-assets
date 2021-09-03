@@ -1,0 +1,1 @@
+export const DATE_TIME_CONTROL_SHOW = 'DD MMM YYYY';

@@ -1,0 +1,37 @@
+@import 'assets/css/variables';
+
+$color-warning: #f2c53e;
+$color-status-in-storage: #2ccb8d;
+$color-status-resale-required: #04b0ed;
+$color-status-maintaining: #bf4b94;
+$color-status-in-use: #eb6e19;
+$color-status-void: #5a5eab;
+$color-status-malfunction: #ff0433;
+$color-line: #cecece;
+
+.bg-status {
+  border-radius: 4px;
+  color: $color-white;
+  text-align: center;
+  padding: 4px 17px;
+  font-size: 11px;
+}
+.in-storage {
+  background-color: $color-status-in-storage;
+}
+.void {
+  background-color: $color-status-void;
+}
+.resale-required {
+  background-color: $color-status-resale-required;
+}
+.maintaining {
+  background-color: $color-status-maintaining;
+}
+.in-use {
+  background-color: $color-status-in-use;
+}
+.malfunction {
+  background-color: $color-status-malfunction;
+}
+

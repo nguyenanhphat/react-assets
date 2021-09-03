@@ -1,0 +1,46 @@
+@import 'assets/css/mixin';
+.asset-property-page {
+  .header {
+    .col-left {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .header-section-custom {
+        span {
+          font-size: 18px;
+          color: $primary-color;
+          cursor: pointer;
+        }
+      }
+      span {
+        font-size: 18px;
+        color: $color-success;
+        cursor: pointer;
+      }
+    }
+    .col-left,
+    .col-right {
+      padding: 0 25px;
+    }
+    .header-section-custom {
+      border-bottom: none;
+    }
+  }
+
+  .content {
+    .line-item {
+      margin-bottom: 10px;
+      .label {
+        @include text-base(400, 14px, #aaabac);
+      }
+    }
+  }
+
+  .tab-custom
+    .ant-tabs-nav
+    .ant-tabs-nav-wrap
+    .ant-tabs-nav-list
+    .ant-tabs-tab {
+    padding: 20px 0;
+  }
+}

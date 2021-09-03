@@ -1,0 +1,14 @@
+@import 'assets/css/mixin';
+
+.ant-breadcrumb.my-breadcrumb-custom > span:last-child {
+  @include text-base(500, 14px, $text-base-color);
+}
+
+.my-breadcrumb-custom {
+  .breadcrumb-item.can-click {
+    cursor: pointer;
+  }
+  .ant-breadcrumb-separator .anticon {
+    font-size: 11px;
+  }
+}

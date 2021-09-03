@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>14C6585F-19F1-457F-8F9D-A355A5BD771D</title>
+    <defs>
+        <path d="M14.5,1.5 L6.5,1.5 L6.5,0.5 C6.5,0.22375 6.27625,0 6,0 L0.5,0 C0.22375,0 0,0.22375 0,0.5 L0,13.5 C0,13.77625 0.22375,14 0.5,14 L6,14 C6.27625,14 6.5,13.77625 6.5,13.5 L6.5,13 L13,13 C13.27625,13 13.5,12.77625 13.5,12.5 C13.5,12.22375 13.27625,12 13,12 L11.41,12 L11.11,10.5 L14.5,10.5 C15.3271875,10.5 16,9.8271875 16,9 L16,3 C16,2.1728125 15.3271875,1.5 14.5,1.5 Z M2.5,10.75 C2.5,10.3365625 2.8365625,10 3.25,10 C3.6634375,10 4,10.3365625 4,10.75 C4,11.1634375 3.6634375,11.5 3.25,11.5 C2.8365625,11.5 2.5,11.1634375 2.5,10.75 Z M4,8 L2.5,8 C2.22375,8 2,7.77625 2,7.5 C2,7.22375 2.22375,7 2.5,7 L4,7 C4.27625,7 4.5,7.22375 4.5,7.5 C4.5,7.77625 4.27625,8 4,8 Z M1,6 L1,5 L5.5,5 L5.5,6 L1,6 Z M5.5,2.5 L5.5,3.5 L1,3.5 L1,2.5 L5.5,2.5 Z M6.5,10.5 L7.89,10.5 L7.59,12 L6.5,12 L6.5,10.5 Z M6.5,8.5 C6.5,7.89584375 6.5,3.28509375 6.5,2.5 L14.5,2.5 C14.775625,2.5 15,2.724375 15,3 L15,8.5 L6.5,8.5 Z" id="path-1"></path>
+    </defs>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0.2-Assets" transform="translate(-850.000000, -222.000000)">
+            <g id="Wrapper" fill="#F6F7FA">
+                <rect id="■-Shape" x="0" y="0" width="1440" height="1369"></rect>
+            </g>
+            <g id="Container" transform="translate(240.000000, 120.000000)">
+                <g id="Backgorund" transform="translate(0.000000, 11.000000)" fill="#FFFFFF">
+                    <rect id="■-Shape" x="0" y="0" width="1180" height="1205"></rect>
+                </g>
+                <g id="Filter" transform="translate(20.000000, 90.000000)">
+                    <g id="Form-Copy-2" transform="translate(578.000000, 0.000000)">
+                        <g id="🌗-Background" stroke="#CECECE">
+                            <rect id="■-Shape" x="0.5" y="0.5" width="268" height="39" rx="4"></rect>
+                        </g>
+                        <g id="Group">
+                            <path d="M39.5,0.5 L39.5,39.5 L4,39.5 C3.03350169,39.5 2.15850169,39.1082492 1.52512627,38.4748737 C0.891750844,37.8414983 0.5,36.9664983 0.5,36 L0.5,36 L0.5,4 C0.5,3.03350169 0.891750844,2.15850169 1.52512627,1.52512627 C2.15850169,0.891750844 3.03350169,0.5 4,0.5 L4,0.5 L39.5,0.5 Z" id="■-Shape" stroke="#CECECE" fill="#DEDEDE"></path>
+                            <g id="🌐-Icon" transform="translate(12.000000, 12.000000)">
+                                <g id="Color" transform="translate(0.000000, 0.800000)">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                                    <g mask="url(#mask-2)" fill="#A9A9A9" id="■-Color">
+                                        <rect x="0" y="0" width="16" height="16.4"></rect>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

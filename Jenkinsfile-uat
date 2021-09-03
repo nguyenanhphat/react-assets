@@ -1,0 +1,63 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                script {
+                    sh 'node -v'
+                    echo 'Build BE files'
+                    dir('backend') {
+                        sh 'if [ -d "dist/uat" ]; then rm -Rf dist/uat; fi'
+                        sh 'npm install'
+                        sh 'npm run build-uat'
+                    }
+                    echo 'Build FE files'
+                    dir('frontend') {
+                        sh 'npm install'
+                        sh 'npm run build-uat'
+                    }
+                }
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'No test yet!'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                script {
+
+                    sh 'node -v'
+                    echo 'Clear all files in api folder'
+                    dir('C:/webdeploy/UAT_assetsapi') {
+                        sh '''
+                        mkdir -p bundle
+                        '''
+                    }
+                    dir('C:/webdeploy/UAT_assetsapi/bundle') {
+                        sh '''
+                        shopt -s extglob
+                        rm -rf *
+                        '''
+                    }
+
+                    echo 'Copy built files to BE folder'
+                    sh 'cp -r backend/dist/uat/. C:/webdeploy/UAT_assetsapi/bundle/'
+
+                    echo 'Clear all files in FE folder'
+                    dir('C:/webdeploy/UAT_assets') {
+                        sh '''
+                        shopt -s extglob
+                        rm -r -- !(web.config)
+                        '''
+                    }
+                    echo 'Copy built files to FE folder'
+                    sh 'cp -r frontend/build/. C:/webdeploy/UAT_assets/'
+
+
+                }
+            }
+        }
+    }
+}

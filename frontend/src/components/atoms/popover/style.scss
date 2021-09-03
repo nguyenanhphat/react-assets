@@ -1,0 +1,24 @@
+@import 'assets/css/mixin';
+.popover-item-custom {
+  padding: 7px 5px;
+  cursor: pointer;
+  @include text-base(400, 14px);
+}
+div.ant-popover-arrow {
+  display: none;
+}
+
+.popover-icon-custom {
+    display: inline-block;
+}
+
+.popover-contain-icon {
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  .popover-icon-custom {
+    display: grid;
+  }
+}

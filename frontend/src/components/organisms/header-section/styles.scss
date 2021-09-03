@@ -1,0 +1,22 @@
+@import 'assets/css/mixin';
+.header-section-custom {
+  padding: 0px 20px;
+  height: 70px;
+  border-bottom: 1px solid #cecece;
+  .col-text {
+    display: flex;
+    align-items: center;
+    @include text-base(500, 17px, $text-base-color);
+    line-height: 24px;
+    .icon-back {
+      font-size: 20px;
+      margin-right: 20px;
+      color: #a9a9a9;
+    }
+  }
+  .col-button {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

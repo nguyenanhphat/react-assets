@@ -1,0 +1,38 @@
+$border-bottom-head: #cecece;
+$color-head: #151b22;
+.table-custom {
+  .ant-table-thead > tr > th {
+    background: none;
+    border-bottom-color: $border-bottom-head;
+    color: $color-head;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .ant-table-tbody {
+    .ant-table-row:nth-child(even) {
+      background-color: #f7f7f7;
+    }
+  }
+  .column-header {
+    display: flex;
+    align-items: center;
+    .sort-icon {
+      font-size: 11px;
+      margin-left: 5px;
+      color: black;
+      .no-sort {
+        opacity: 0.6;
+        margin-bottom: 4px;
+      }
+    }
+  }
+  .column-header-pointer {
+    cursor: pointer;
+  }
+}
+
+.sorterIcon {
+  transform: scaleY(-1);
+  transition: transform linear .3s;
+}
+

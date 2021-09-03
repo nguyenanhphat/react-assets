@@ -1,0 +1,64 @@
+@import 'assets/css/variables';
+$background-prefix: #dedede;
+$border-control: #cecece;
+.my-input.ant-input-affix-wrapper-focused {
+  border-color: $color-success;
+}
+
+input.my-input,
+span.my-input {
+  padding: 0px;
+  height: 40px;
+  border-radius: 5px;
+  box-shadow: none;
+  border: 1px solid $border-control;
+  .ant-input-focused,
+  &:focus,
+  &:hover {
+    border-color: $color-success;
+    box-shadow: none;
+  }
+  .ant-input {
+    border-radius: inherit;
+  }
+  .ant-input::placeholder {
+    color: #858688;
+    font-size: 13px;
+  }
+
+  .ant-input-prefix {
+    background: $background-prefix;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    .anticon {
+      font-size: 18px;
+    }
+  }
+}
+
+input.my-input {
+  padding: 5px 0 5px 10px;
+}
+input.my-input::placeholder {
+  color: #858688;
+  font-size: 13px;
+}
+
+.ant-dropdown-trigger input.not-apply-disable-input,
+span.not-apply-disable-input {
+  background: white;
+  cursor: default;
+  .ant-input[disabled] {
+    cursor: text;
+  }
+}
+
+input.my-input-no-border,
+span.my-input-no-border {
+  border: none;
+  border-radius: none;
+}
